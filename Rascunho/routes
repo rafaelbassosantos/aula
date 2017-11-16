@@ -1,0 +1,24 @@
+/static StaticR Static appStatic
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/                                                  HomeR            GET
+/logon                                             LogonR           GET
+/home                                              Home2R           GET
+/home/alteradados                                  AlteraDadosR     GET
+
+/pessoa                                            PessoaInsereR    POST
+/pessoa/#PessoaId/buscar                           BuscaCR          GET
+/pessoa/#PessoaId/delete                           ApagarCR         DELETE
+/pessoa/#PessoaId/altera                           AlteraCR         PUT
+/pessoa/#PessoaId/altera/#Text/nome                AlteraNomeCR     PATCH
+
+/login                                             LoginInsereR     POST
+/login/#PessoaId/#LoginId/alterasenha              AlteraLR         PUT
+
+/projeto                                           ProjetoR         POST GET
+/projeto/#ClienteId/todos/pmp                      PmpR             GET
+
+/alocacao/#ClienteId/cliente/#ProjetoId/projeto    AlocacaoR        POST
+/alocacao/#ProjetoId/listar/cliente                ListarCliR       GET

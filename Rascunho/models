@@ -1,0 +1,29 @@
+Pessoa json
+    nome         Text
+    email        Text
+    telefone     Text
+    deriving     Show
+
+Login json
+    usuario      Text
+    pessoaid     PessoaId
+    senha        Text
+    
+Fotos json
+    nome         Text
+    destino      Text
+    deriving     Show
+
+Video json
+    url          Text
+    deriving     Show
+    
+Texto json
+    conteudo     Text
+    deriving     Show
+
+Portifolio json
+    fotosId      FotosId
+    videoId      VideoId
+    textoId      TextoId
+    deriving     Show
