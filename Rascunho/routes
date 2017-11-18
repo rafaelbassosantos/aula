@@ -9,16 +9,32 @@
 /home/alteradados                                  AlteraDadosR     GET
 
 /pessoa                                            PessoaInsereR    POST
-/pessoa/#PessoaId/buscar                           BuscaCR          GET
+/pessoa/#PessoaId/buscar                           BuscaCR          GET         
 /pessoa/#PessoaId/delete                           ApagarCR         DELETE
 /pessoa/#PessoaId/altera                           AlteraCR         PUT
 /pessoa/#PessoaId/altera/#Text/nome                AlteraNomeCR     PATCH
+/pessoa/#PessoaId/altera/#Text/telefone            AlteraTeleCR     PATCH
+/pessoa/#PessoaId/altera/#Text/email               AlteraMailCR     PATCH
+
+/fotos                                             ImagemInsereR    POST
+/fotos/#FotosId/buscar                             BuscaFR          GET
+/fotos/#FotosId/delete                             ApagarFR         DELETE
+/Fotos/#FotosId/altera/#Text/nome                  AlteraNomeFR     PATCH
+/Fotos/#FotosId/altera/#Text/destino               AlteraLinkFR     PATCH
+
+/video                                             VideoInsereR     POST
+/video/#VideoId/buscar                             BuscaVR          GET
+/video/#VideoId/delete                             ApagarVR         DELETE
+/video/#VideoId/altera/#Text/url                   AlteraLinkVR     PATCH
+/video/#VideoId/altera/#Text/titulo                AlteraTituloVR   PATCH
+
+/texto                                            TextoInsereR      POST
+/texto/#TextoId/buscar                            BuscaTR           GET
+/texto/#TextoId/delete                            ApagarTR          DELETE
+/texto/#TextoId/altera/#Text/conteudo             AlteraTR          PATCH
 
 /login                                             LoginInsereR     POST
 /login/#PessoaId/#LoginId/alterasenha              AlteraLR         PUT
 
-/projeto                                           ProjetoR         POST GET
-/projeto/#ClienteId/todos/pmp                      PmpR             GET
 
-/alocacao/#ClienteId/cliente/#ProjetoId/projeto    AlocacaoR        POST
-/alocacao/#ProjetoId/listar/cliente                ListarCliR       GET
+

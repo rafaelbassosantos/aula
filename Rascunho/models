@@ -16,6 +16,7 @@ Fotos json
 
 Video json
     url          Text
+    titulo       Text
     deriving     Show
     
 Texto json
@@ -26,4 +27,5 @@ Portifolio json
     fotosId      FotosId
     videoId      VideoId
     textoId      TextoId
+    pessoaId     PessoaId
     deriving     Show

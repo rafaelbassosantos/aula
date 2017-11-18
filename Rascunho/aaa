@@ -4,3 +4,11 @@ import Data.Digest.Pure.MD5
 import Data.ByteString.Lazy.Char8
 
 main = print $ md5 "www.GeeksBR.com"
+
+/* comentário
+POST = inicial, starter
+GET = pegar, receber
+PUT = Alterar, atualizar
+DELETE = Apagar, excluir
+PATCH = Altera uma seção/parte
+*/
