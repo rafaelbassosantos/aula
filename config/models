@@ -1,15 +1,44 @@
-Cliente json
-    nome     Text
-    cpf      Text
-    salaraio  Double
+Pessoa json
+    nome              Text
+    dataNasc          Day
+    telefone          Text
+    usuario           Text
+    email             Text
+    senha             Text
+    UniqueUsuario     usuario
+    UniqueEmail       email
     deriving Show
 
-Alocacao json
-    cliid    ClienteId
-    projid   ProjetoId
+Fotos json
+    nome              Text
+    destino           Text
+    deriving          Show
+
+ResolucaoFotos json
+    fotosId           FotosId
+    deriving          Show
     
-Projeto json
-    nome     Text
-    budget   Double
-    pmp      ClienteId
+Video json
+    url               Text
+    titulo            Text
+    deriving          Show
     
+ResolucaoVideo json
+    videoID           VideoId
+    deriving          Show
+    
+Texto json
+    conteudo          Text
+    deriving          Show
+    
+ResolucaoTexto json
+    textId            TextoId
+    deriving Show
+    
+Portifolio json
+    lingugem          Text
+    resolucaoFotosId  ResolucaoFotosId
+    resolucaoVideoId  ResolucaoVideoId
+    resolucaoTextoId  ResolucaoTextoId
+    pessoaId          PessoaId
+    deriving Show

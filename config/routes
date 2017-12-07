@@ -1,23 +1,28 @@
 /static StaticR Static appStatic
 
-/favicon.ico FaviconR GET
-/robots.txt RobotsR GET
+/favicon.ico                                       FaviconR         GET
+/robots.txt                                        RobotsR          GET
 
-/                                               HomeR          GET
-/pagina1                                        Pag1R          GET
-/pagina2                                        Pag2R          GET
-/pagina3                                        Pag3R          GET
-/add/#Int/#Int                                  AddR           GET
-/listar                                         ListarR        GET
-/head/#String                                   HeadR          GET
+/                                                  IndexR           GET
+/home                                              HomeR            GET
+/login                                             LoginR           GET POST
+/logout                                            LogoutR          POST
+/pessoa                                            PessoaR          GET
 
-/cliente                                        ClienteInsereR POST
-/cliente/#ClienteId/buscar                      BuscarR        GET
-/cliente/#ClienteId/apagar                      ApagarR        DELETE
-/cliente/#ClienteId/altera                      AlteraR        PUT
-/cliente/#ClienteId/altera/#Text/nome           AlteraNomeR    PATCH
-/projeto                                        ProjetoR       GET POST
-/projeto/#ClienteId/todos/lista                 PmpR           GET
-/alocacao/#ClienteId/cliente/#ProjetoId/projeto AlocacaoR      POST
-/alocacao/#ProjetoId/listar/cliente             ListarCliR     GET
-/alocacao/#ProjetoId/listar/clientef            ListarClifR    GET
+/texto                                             TextoR           GET POST
+/texto/#TextoId/buscar                             TextoBuscaR      GET
+
+/video                                             VideoR           GET POST
+/video/#VideoId/buscar                             BuscaVideoR      GET
+
+/fotos                                             FotosR           GET POST
+/fotos/#FotosId/buscar                             BuscaFotosR      GET
+
+/en ENG:
+    / ENPessoaR        GET
+
+/uk UKR:
+    / UKPessoaR        GET
+
+/br BRR:
+    / BRPessoaR        GET
