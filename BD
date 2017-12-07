@@ -1,0 +1,21 @@
+Tudo na mesma linha
+
+psql -h ec2-184-72-223-199.compute-1.amazonaws.com -U uhyrzomcfikuck -d dekevs8opmbb02
+
+senha: 
+1cc53490b3578b7245cbb6bcdc5c6681dfbc80d0c1d7f5dbdb73a080c251ff35
+
+
+
+curl -v -X POST https://haskgamma-romefeller.c9users.io/cliente/ -d '{"nome":"Albert","cpf":"11111111111","salario":15200}'
+
+curl -v -X GET https://haskgamma-romefeller.c9users.io/cliente/1/buscar > arq 
+
+curl -v -X DELETE https://haskgamma-romefeller.c9users.io/cliente/1/apagar 
+
+curl -v -X PUT https://haskgamma-romefeller.c9users.io/cliente/1/altera -d '{"nome":"Isaac","cpf":"99999999999","salario":1}'
+
+curl -X PATCH https://haskgamma-romefeller.c9users.io/cliente/1/altera/RAFAEL/nome
+
+lsof -i:8080
+kill 68526

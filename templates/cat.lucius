@@ -1,0 +1,12 @@
+
+	
+
+In Lucius, a set of CSS properties can be created as a mixin, and reused in multiple declarations. So, when you want to reuse some property, I would do like this:
+
+    Group a set of properties that are going to be re-used. Create them as mixins using luciusMixin.
+    Add the mixins in the appropriate place where it is required in the lucius quasiqouter.
+
+This code will produce your required CSS.
+
+{-# LANGUAGE QuasiQuotes #-}
+

@@ -1,0 +1,16 @@
+head{
+    background-color: orange;
+}
+head p{
+    font: Helvetica, sans-serif, "Times New Roman"; 
+    color: #909090;
+    text-transform: uppercase;
+}
+body{
+    background-color: orange;
+    font: Helvetica, sans-serif, "Times New Roman"; 
+}
+body p{
+    color: #909090;
+    text-transform: uppercase;
+}
